@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f3ea;
+  color: #2b2b2b;
+  line-height: 1.4;
+}
+
+header {
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 20px 16px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 1.6rem;
+}
+
+header a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.botones button {
+  flex: 1 1 140px;
+  max-width: 200px;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #2e7d32;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.botones button:hover {
+  background: #e8f5e9;
+}
+
+.botones button.activo {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.menu {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+}
+
+.menu h2 {
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 4px;
+}
+
+.menu .nota {
+  font-style: italic;
+  color: #555;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0dccf;
+}
+
+.menu li span.precio {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.menu h3 {
+  margin: 18px 0 4px;
+  font-size: 1.05rem;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 0.85rem;
+  padding: 12px;
+}
