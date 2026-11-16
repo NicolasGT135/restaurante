@@ -1,6 +1,6 @@
 // ====== CONFIGURACIÓN ======
 // Cambia aquí el número de contacto del restaurante:
-const TELEFONO = "[PON AQUÍ EL NÚMERO]";
+const TELEFONO = "3102693197";
 
 // ====== MENÚ ======
 // Para cambiar un precio o un plato, edita solo este bloque.
