@@ -3,24 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú del Restaurante El Trébol Gretel: desayunos y almuerzos caseros todos los días.">
+  <meta name="theme-color" content="#1b5e3b">
   <title>Restaurante El Trébol Gretel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Restaurante El Trébol Gretel</h1>
-    <p>Dirección: Carrera 123 13 - 34 a 13 y ven</p>
-    <p>Contacto: <a id="telefono" href="tel:3102693197">3102693197</a></p>
+  <header class="hero">
+    <div class="hero-contenido">
+      <p class="etiqueta">Comida casera</p>
+      <h1>Restaurante<br>El Trébol Gretel</h1>
+      <p class="direccion">📍 Carrera 123 13 - 34 a 13 y ven</p>
+      <div class="acciones">
+        <a id="llamar" class="btn btn-principal" href="#">📞 Llamar <span id="telefono"></span></a>
+        <a id="whatsapp" class="btn btn-secundario" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
   </header>
 
-  <nav id="botones" class="botones"></nav>
+  <nav class="barra">
+    <div id="botones" class="botones" role="tablist" aria-label="Menú por día"></div>
+  </nav>
 
   <main>
-    <section id="menu" class="menu"></section>
+    <section id="menu" class="menu" aria-live="polite"></section>
+
+    <section class="galeria">
+      <h2>Nuestros platos</h2>
+      <div class="rejilla">
+        <img src="imagenes/desayuno.jpg" alt="Desayuno con huevos pericos, arroz, arepa y chocolate" loading="lazy">
+        <img src="imagenes/sopa.jpg" alt="Sopa casera" loading="lazy">
+        <img src="imagenes/bistec.jpg" alt="Carne en bistec con huevo y plátano" loading="lazy">
+        <img src="imagenes/frijoles-carne.jpg" alt="Frijoles con arroz y carne" loading="lazy">
+        <img src="imagenes/frijoles-pollo.jpg" alt="Frijoles con arroz y pollo" loading="lazy">
+        <img src="imagenes/pescado.jpg" alt="Mojarra frita con arroz y papa francesa" loading="lazy">
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Precios en pesos colombianos</p>
+    <p class="nombre-pie">Restaurante El Trébol Gretel</p>
+    <p>Carrera 123 13 - 34 a 13 y ven · Tel. <span id="telefono-pie"></span></p>
+    <p class="pequeno">Precios en pesos colombianos</p>
   </footer>
 
   <script src="script.js"></script>
